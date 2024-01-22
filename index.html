@@ -46,18 +46,108 @@
 <body>
     <!-- ======== header section start ======== -->
     <header class="container mx-auto lg:px-20 px-8">
-
+        <!-- logo -->
+        <h2 class="text-5xl">Hockey</h2>
     </header>
 
     <!-- ======== header section End ======== -->
 
-    <!-- ======== Hero section Start ======== -->
-    <!-- ======== Hero section End ======== -->
+    <!-- ======== Banner section Start ======== -->
+    <section class="hero container mx-auto px-8 my-20">
+        <div class="carousel w-full">
+            <!-- slide-1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="images/banner1.png" class="w-full" />
+                <div class="absolute flex gap-4 transform -translate-y-[10px] left-5 right-5 bottom-[10px]">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                </div>
+            </div>
+
+            <!-- slide-2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="images/banner2.jpg" class="w-full" />
+                <div class="absolute flex gap-4 transform -translate-y-[20px] left-5 right-5 bottom-[20px]">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+                </div>
+            </div>
+
+            <!-- slide-3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="images/banner3.jpg" class="w-full" />
+                <div class="absolute flex gap-4 transform -translate-y-[20px] left-5 right-5 bottom-[20px]">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
+                    <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== Banner section End ======== -->
 
 
     <!-- ======== Main section Start ======== -->
     <main class="container mx-auto lg:px-20 px-8">
         <!-- ======== Clubs section Start ======== -->
+        <section class="">
+            <!-- section-header -->
+            <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
+                <div class="lg:max-w-lg max-w-md mx-auto text-center ">
+                    <h2 class="lg:text-4xl text-2xl font-manrope font-bold mb-5">
+                        Professional Hockeys Club
+                    </h2>
+                    <p class="text-base opacity-90">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin.
+                    </p>
+                </div>
+            </div>
+
+            <!-- clab perfomance  -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 ">
+                <!-- card-1 -->
+                <div class="flex flex-col items-center text-center space-y-2">
+                    <div class="radial-progress text-red-500 text-xl font-bold" style="--value:87;" role="progressbar">
+                        87%</div>
+                    <h4 class="text-xl font-bold">Player Facility</h4>
+                    <p class="text-lg">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+
+                <!-- card-2 -->
+                <div class="flex flex-col items-center text-center space-y-2">
+                    <div class="radial-progress text-green-500 text-xl font-bold " style="--value:95;"
+                        role="progressbar">95%</div>
+                    <h4 class="text-xl font-bold">Experienced Coach</h4>
+                    <p class="text-lg">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+
+                <!-- card-3 -->
+                <div class="flex flex-col items-center text-center space-y-2">
+                    <div class="radial-progress text-yellow-500 text-xl font-bold " style="--value:90;"
+                        role="progressbar">90%</div>
+                    <h4 class="text-xl font-bold">Senior Player</h4>
+                    <p class="text-lg">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+
+                <!-- card-4 -->
+                <div class="flex flex-col items-center text-center space-y-2">
+                    <div class="radial-progress text-blue-500 text-xl font-bold" style="--value:80;" role="progressbar">
+                        80%</div>
+                    <h4 class="text-xl font-bold">Training Ground</h4>
+                    <p class="text-lg">
+                        Amet consectetur. Condimentum dignissim adipiscing .
+                    </p>
+                </div>
+            </div>
+
+        </section>
         <!-- ======== Clubs section End ======== -->
 
         <!-- ======== program section Start ======== -->
