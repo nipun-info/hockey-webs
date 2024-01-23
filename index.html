@@ -26,9 +26,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'dark-100': '#131318',
-                        'dark-200': '#707070',
-                        'orange-10': '#FF4240'
+                        template: '#FF4240'
                     },
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif']
@@ -54,7 +52,7 @@
     <!-- ======== header section End ======== -->
 
     <!-- ======== Banner section Start ======== -->
-    <section class="hero container mx-auto px-8 mt-24">
+    <section class="hero container mx-auto px-8 mt-24 font-manrope">
         <div class="carousel w-full">
             <!-- slide-1 -->
             <div id="slide1" class="carousel-item relative w-full">
@@ -89,7 +87,7 @@
 
 
     <!-- ======== Main section Start ======== -->
-    <main class="container mx-auto lg:px-20 px-8">
+    <main class="font-manrope container mx-auto lg:px-20 px-8">
         <!-- ======== Clubs section Start ======== -->
         <section class="mt-24">
             <!-- section-header -->
@@ -156,7 +154,7 @@
             <!-- section-header -->
             <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
                 <div class="lg:max-w-lg max-w-md mx-auto text-center ">
-                    <h2 class="lg:text-4xl text-2xl font-manrope font-bold mb-5">
+                    <h2 class="lg:text-4xl text-2xl font-bold mb-5">
                         Program Sections
                     </h2>
                     <p class="text-base opacity-90">
@@ -179,7 +177,7 @@
                             sed et in.
                         </p>
                         <button
-                            class="btn bg-orange-10 border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 duration-500 ">Register
+                            class="btn bg-template border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 duration-500 ">Register
                             Now!</button>
                     </div>
                 </div>
@@ -194,7 +192,7 @@
                             sed et in.
                         </p>
                         <button
-                            class="btn bg-orange-10 border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 duration-500 ">Register
+                            class="btn bg-template border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 duration-500 ">Register
                             Now!</button>
                     </div>
                 </div>
@@ -210,7 +208,7 @@
                             sed et in.
                         </p>
                         <button
-                            class="btn bg-orange-10 border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 duration-500 ">Register
+                            class="btn bg-template border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 duration-500 ">Register
                             Now!</button>
                     </div>
                 </div>
@@ -221,12 +219,61 @@
         <!-- ======== program section End ======== -->
 
         <!-- ======== Products section Start ======== -->
+
+        <section class="mt-24">
+            <!-- section-header -->
+            <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
+                <div class="lg:max-w-lg max-w-md mx-auto text-center ">
+                    <h2 class="lg:text-4xl text-2xl font-bold mb-5">
+                        Our New Products
+                    </h2>
+                    <p class="text-base opacity-90">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin.
+                    </p>
+                </div>
+            </div>
+
+            <!-- section container -->
+        </section>
         <!-- ======== Products section End ======== -->
 
         <!-- ======== FAQ section Start (bonus) ======== -->
+        <section class="mt-24">
+            <!-- section-header -->
+            <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
+                <div class="lg:max-w-lg max-w-md mx-auto text-center ">
+                    <h2 class="lg:text-4xl text-2xl font-bold mb-5">
+                        Clients Question
+                    </h2>
+                    <p class="text-base opacity-90">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin.
+                    </p>
+                </div>
+            </div>
+
+            <!-- section container -->
+        </section>
         <!-- ======== FAQ section End ======== -->
 
         <!-- ======== Contact section Start ======== -->
+        <section class="mt-24">
+            <!-- section-header -->
+            <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
+                <div class="lg:max-w-lg max-w-md mx-auto text-center ">
+                    <h2 class="lg:text-4xl text-2xl font-bold mb-5">
+                        Get In Touch
+                    </h2>
+                    <p class="text-base opacity-90">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin.
+                    </p>
+                </div>
+            </div>
+
+            <!-- section container -->
+        </section>
         <!-- ======== Contact section End ======== -->
     </main>
 
@@ -234,9 +281,76 @@
 
 
     <!-- ======== Footer section Start ======== -->
-    <footer class="bg-black mb-96">
-        <div class="container mx-auto lg:px-20 px-8">
+    <footer class="font-manrope bg-black text-white">
+        <div class="container mx-auto lg:px-20 px-8 py-24">
+            <div class="grid gap-8 lg:grid-cols-4 grid-cols-1 space-x-10 lg:text-left text-center">
 
+                <!-- column-1 -->
+                <div class="card space-y-5 col-span-2 lg:col-span-1">
+                    <h3 class="text-3xl font-bold">
+                        Get In Touch
+                    </h3>
+                    <p class="text-base opacity-70">
+                        Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                        nullam proin.
+                    </p>
+                    <p class="text-base opacity-70 flex items-center gap-2">
+                        <i class="fa-regular fa-envelope text-xl text-template"></i>
+                        hockeys@support.com
+                    </p>
+                    <p class="text-base opacity-70 flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-xl text-template"></i>
+                        (+62) 123-321-543
+                    </p>
+                </div>
+
+                <!-- column-2 -->
+                <div class="space-y-5 col-span-1">
+                    <h4 class="text-xl font-semibold mb-8">
+                        Company
+                    </h4>
+                    <div class="flex flex-col space-y-5 text-base">
+                        <a class="text-base opacity-70" href="#">about us</a>
+                        <a class="text-base opacity-70" href="#">Leadership </a>
+                        <a class="text-base opacity-70" href="#">Careers</a>
+                        <a class="text-base opacity-70" href="#">News & Article</a>
+                        <a class="text-base opacity-70" href="#">Legal Notice</a>
+                    </div>
+
+                </div>
+
+                <!-- column-3 -->
+                <div class="space-y-5 col-span-1">
+                    <h4 class="text-xl font-semibold mb-8">
+                        Support
+                    </h4>
+                    <div class="flex flex-col space-y-5 text-base">
+                        <a class="text-base opacity-70" href="#">Help Center</a>
+                        <a class="text-base opacity-70" href="#">FAQ </a>
+                        <a class="text-base opacity-70" href="#">Ticket Support</a>
+                        <a class="text-base opacity-70" href="#">Contact Us</a>
+                    </div>
+                </div>
+
+                <!-- column-4 -->
+                <div class="space-y-5 col-span-2 lg:col-span-1">
+                    <h4 class="text-xl font-semibold mb-8">
+                        Services
+                    </h4>
+                    <div class="flex flex-col space-y-5 text-base">
+                        <a class="text-base opacity-70" href="#">Academy</a>
+                        <a class="text-base opacity-70" href="#">Group Lesson</a>
+                        <a class="text-base opacity-70" href="#">Private Lesson</a>
+                        <a class="text-base opacity-70" href="#">Hockeys for kids</a>
+                        <a class="text-base opacity-70" href="#">Hockeys for Adult</a>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
         </div>
     </footer>
 
