@@ -45,15 +45,57 @@
 
 <body>
     <!-- ======== header section start ======== -->
-    <header class="container mx-auto lg:px-20 px-8">
-        <!-- logo -->
-        <h2 class="text-5xl">Hockey</h2>
+    <header class="container mx-auto lg:px-2 px-8 font-manrope">
+        <div class="navbar">
+            <div class="navbar-start">
+                <div class="dropdown ">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
+                        <li><a class="text-lg font-semibold text-template hover:text-template">Home</a></li>
+                        <li><a class="text-lg font-semibold hover:text-template">About</a></li>
+                        <li><a class="text-lg font-semibold hover:text-template">Pages</a></li>
+                        <li><a class="text-lg font-semibold hover:text-template">Blog</a></li>
+                        <li><a class="text-lg font-semibold hover:text-template">Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost lg:text-4xl text-base font-bold">Hockey<span
+                        class="text-template -mx-2 font-bold">'</span>s</a>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-lg font-semibold text-template hover:text-template">Home</a></li>
+                    <li><a class="text-lg font-semibold hover:text-template">About</a></li>
+                    <li><a class="text-lg font-semibold hover:text-template">Pages</a></li>
+                    <li><a class="text-lg font-semibold hover:text-template">Blog</a></li>
+                    <li><a class="text-lg font-semibold hover:text-template">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle hidden lg:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <a class="btn btn-primary bg-template outline-0 text-white hover:bg-transparent hover:text-template ">Get
+                    Ticket</a>
+            </div>
+        </div>
     </header>
 
     <!-- ======== header section End ======== -->
 
     <!-- ======== Banner section Start ======== -->
-    <section class="hero container mx-auto px-8 mt-24 font-manrope">
+    <section class="container mx-auto px-8 mt-8 font-manrope relative">
         <div class="carousel w-full">
             <!-- slide-1 -->
             <div id="slide1" class="carousel-item relative w-full">
@@ -63,6 +105,7 @@
                     <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
                 </div>
             </div>
+
 
             <!-- slide-2 -->
             <div id="slide2" class="carousel-item relative w-full">
@@ -82,15 +125,25 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- ======== Banner section End ======== -->
+        <div class="max-w-md mx-auto bg-black text-white py-8 rounded-xl lg:absolute bottom-10 right-20">
+            <div class="px-4">
+                <h2 class="text-xl mb-5">
+                    Meet all the heroes from the field
+                </h2>
+                <p class="text-base text-gray-500">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin.
+                </p>
+            </div>
+        </div>
+    </section>
 
 
     <!-- ======== Main section Start ======== -->
     <main class="font-manrope container mx-auto lg:px-20 px-8">
         <!-- ======== Clubs section Start ======== -->
-        <section class="mt-24">
+        <section class="mt-20">
             <!-- section-header -->
             <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
                 <div class="lg:max-w-lg max-w-md mx-auto text-center ">
@@ -148,7 +201,6 @@
             </div>
 
         </section>
-        <!-- ======== Clubs section End ======== -->
 
         <!-- ======== program section Start ======== -->
         <section class="mt-24">
@@ -168,7 +220,8 @@
             <!--    Programs    -->
             <div class="grid gap-4 lg:grid-cols-2 grid-cols-1">
                 <!-- card-1 -->
-                <div class="card  bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url('images/2.png')] bg-cover bg-center min-h-[30vh] ">
+                <div
+                    class="card  bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url('images/2.png')] bg-cover bg-center min-h-[30vh] ">
                     <div class="max-w-[480px] px-8 py-20 text-white  space-y-8">
                         <h3 class="text-3xl font-bold">Junior Program</h3>
                         <p class="text-lg">
@@ -183,7 +236,8 @@
                     </div>
                 </div>
                 <!-- card-2 -->
-                <div class="card bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url('images/3.png')] bg-cover min-h-[30vh] ">
+                <div
+                    class="card bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url('images/3.png')] bg-cover min-h-[30vh] ">
                     <div class="max-w-[480px] px-8 py-20 text-white  space-y-8">
                         <h3 class="text-3xl font-bold">Junior Program</h3>
                         <p class="text-lg">
@@ -199,7 +253,8 @@
                 </div>
 
                 <!-- card-3 -->
-                <div class="card  bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.2)),url('images/4.png')] bg-cover bg-center min-h-[30vh] lg:col-span-2">
+                <div
+                    class="card  bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.2)),url('images/4.png')] bg-cover bg-center min-h-[30vh] lg:col-span-2">
                     <div class="max-w-[550px] px-8 py-20 text-white  space-y-8">
                         <h3 class="text-3xl font-bold">Junior Program</h3>
                         <p class="text-lg">
@@ -218,7 +273,7 @@
 
         <!-- ======== Products section Start ======== -->
 
-        <section class="mt-24">
+        <section class="mt-20">
             <!-- section-header -->
             <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
                 <div class="lg:max-w-lg max-w-md mx-auto text-center ">
@@ -471,7 +526,7 @@
         </section>
 
         <!-- ======== FAQ section Start (bonus) ======== -->
-        <section class="mt-24">
+        <section class="mt-20">
             <!-- section-header -->
             <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
                 <div class="lg:max-w-lg max-w-md mx-auto text-center ">
@@ -572,7 +627,7 @@
                         </div>
                     </div>
 
-                    
+
 
 
                 </div>
@@ -581,7 +636,7 @@
         </section>
 
         <!-- ======== Contact section Start ======== -->
-        <section class="my-24 ">
+        <section class="my-20 ">
             <!-- section-header -->
             <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
                 <div class="lg:max-w-lg max-w-md mx-auto text-center ">
@@ -598,14 +653,14 @@
             <!-- Contact us container -->
 
             <div class="flex lg:flex-row flex-col justify-between gap-8">
-                
+
                 <!-- left side content -->
                 <div class="flex flex-col gap-6 border rounded-lg p-5 lg:w-1/2">
                     <!-- card-1 -->
                     <div class="bg-[#bced6d1a] px-8 py-5 space-y-2 rounded-2xl min-w-80">
                         <img src="images/icon-1.png" alt="" class="mb-6">
                         <p class="text-gray-500 text-lg ">
-                            Phone Number:                          
+                            Phone Number:
                         </p>
                         <h4 class="text-lg font-bold ">+880191900000</h4>
                     </div>
@@ -614,16 +669,16 @@
                     <div class="bg-[#fddd621a] px-8 py-5 space-y-2 rounded-2xl min-w-80">
                         <img src="images/icon-2.png" alt="" class="mb-6">
                         <p class="text-gray-500 text-lg ">
-                            Email:                          
+                            Email:
                         </p>
                         <h4 class="text-lg font-bold ">hockey@sports.com</h4>
                     </div>
 
-                     <!-- card-3 -->
-                     <div class="bg-[#629cf31a] px-8 py-5 space-y-2 rounded-2xl min-w-80">
+                    <!-- card-3 -->
+                    <div class="bg-[#629cf31a] px-8 py-5 space-y-2 rounded-2xl min-w-80">
                         <img src="images/icon-3.png" alt="" class="mb-6">
                         <p class="text-gray-500 text-lg ">
-                            Location:                          
+                            Location:
                         </p>
                         <h4 class="text-lg font-bold ">152/1 Mohakhali Wireless Gate</h4>
                     </div>
@@ -632,38 +687,44 @@
                 <!-- right side content -->
 
                 <div class="">
-                    <form class="grid lg:grid-cols-2 grid-cols-1 gap-12">                
+                    <form class="grid lg:grid-cols-2 grid-cols-1 gap-12">
                         <div class="flex flex-col space-y-2 min-w-60">
                             <label for="" class="text-xl font-semibold">Your Name</label>
-                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full" placeholder="Enter Your Name" >
+                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"
+                                placeholder="Enter Your Name">
                         </div>
 
                         <div class="flex flex-col space-y-2 min-w-60">
                             <label for="" class="text-xl font-semibold">Your Email</label>
-                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"  placeholder="Enter Your Email">
+                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"
+                                placeholder="Enter Your Email">
                         </div>
 
                         <div class="flex flex-col space-y-2 min-w-60">
                             <label for="" class="text-xl font-semibold">Subject</label>
-                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"  placeholder="Enter Your subject">
+                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"
+                                placeholder="Enter Your subject">
                         </div>
 
                         <div class="flex flex-col space-y-2 min-w-60">
                             <label for="" class="text-xl font-semibold">Phone Number</label>
-                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"   placeholder="Enter Your phone number">
+                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"
+                                placeholder="Enter Your phone number">
                         </div>
 
                         <div class="flex flex-col space-y-2 min-w-80 col-span-2">
                             <label for="" class="text-xl font-semibold">Massage</label>
-                            <textarea class="textarea textarea-bordered outline-0 h-60" placeholder="Write your massage"></textarea>
+                            <textarea class="textarea textarea-bordered outline-0 h-60"
+                                placeholder="Write your massage"></textarea>
                         </div>
-                        
+
                         <div class="flex min-w-80 col-span-2">
                             <button
-                            class="btn bg-template border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 hover:text-orange-700 duration-500 w-full">Send Message</button>
+                                class="btn bg-template border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 hover:text-orange-700 duration-500 w-full">Send
+                                Message</button>
                         </div>
                     </form>
-                </div>            
+                </div>
             </div>
 
             <!-- contact bottom -->
@@ -682,7 +743,6 @@
     </main>
 
     <!-- ======== Main section End ======== -->
-
 
     <!-- ======== Footer section Start ======== -->
 
