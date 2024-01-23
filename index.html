@@ -168,7 +168,7 @@
             <!--    Programs    -->
             <div class="grid gap-4 lg:grid-cols-2 grid-cols-1">
                 <!-- card-1 -->
-                <div class="card  bg-[url('images/2.png')] bg-cover bg-center min-h-[30vh] ">
+                <div class="card  bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url('images/2.png')] bg-cover bg-center min-h-[30vh] ">
                     <div class="max-w-[480px] px-8 py-20 text-white  space-y-8">
                         <h3 class="text-3xl font-bold">Junior Program</h3>
                         <p class="text-lg">
@@ -183,7 +183,7 @@
                     </div>
                 </div>
                 <!-- card-2 -->
-                <div class="card  bg-[url('images/3.png')] bg-cover min-h-[30vh] ">
+                <div class="card bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url('images/3.png')] bg-cover min-h-[30vh] ">
                     <div class="max-w-[480px] px-8 py-20 text-white  space-y-8">
                         <h3 class="text-3xl font-bold">Junior Program</h3>
                         <p class="text-lg">
@@ -199,7 +199,7 @@
                 </div>
 
                 <!-- card-3 -->
-                <div class="card  bg-[url('images/4.png')] bg-cover bg-center min-h-[30vh] lg:col-span-2">
+                <div class="card  bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.2)),url('images/4.png')] bg-cover bg-center min-h-[30vh] lg:col-span-2">
                     <div class="max-w-[550px] px-8 py-20 text-white  space-y-8">
                         <h3 class="text-3xl font-bold">Junior Program</h3>
                         <p class="text-lg">
@@ -213,11 +213,8 @@
                             Now!</button>
                     </div>
                 </div>
-
-
             </div>
         </section>
-        <!-- ======== program section End ======== -->
 
         <!-- ======== Products section Start ======== -->
 
@@ -472,7 +469,6 @@
                 </div>
             </div>
         </section>
-        <!-- ======== Products section End ======== -->
 
         <!-- ======== FAQ section Start (bonus) ======== -->
         <section class="mt-24">
@@ -585,7 +581,7 @@
         </section>
 
         <!-- ======== Contact section Start ======== -->
-        <section class="mt-24">
+        <section class="my-24 ">
             <!-- section-header -->
             <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
                 <div class="lg:max-w-lg max-w-md mx-auto text-center ">
@@ -599,9 +595,90 @@
                 </div>
             </div>
 
-            <!-- section container -->
+            <!-- Contact us container -->
+
+            <div class="flex lg:flex-row flex-col justify-between gap-8">
+                
+                <!-- left side content -->
+                <div class="flex flex-col gap-6 border rounded-lg p-5 lg:w-1/2">
+                    <!-- card-1 -->
+                    <div class="bg-[#bced6d1a] px-8 py-5 space-y-2 rounded-2xl min-w-80">
+                        <img src="images/icon-1.png" alt="" class="mb-6">
+                        <p class="text-gray-500 text-lg ">
+                            Phone Number:                          
+                        </p>
+                        <h4 class="text-lg font-bold ">+880191900000</h4>
+                    </div>
+
+                    <!-- card-2 -->
+                    <div class="bg-[#fddd621a] px-8 py-5 space-y-2 rounded-2xl min-w-80">
+                        <img src="images/icon-2.png" alt="" class="mb-6">
+                        <p class="text-gray-500 text-lg ">
+                            Email:                          
+                        </p>
+                        <h4 class="text-lg font-bold ">hockey@sports.com</h4>
+                    </div>
+
+                     <!-- card-3 -->
+                     <div class="bg-[#629cf31a] px-8 py-5 space-y-2 rounded-2xl min-w-80">
+                        <img src="images/icon-3.png" alt="" class="mb-6">
+                        <p class="text-gray-500 text-lg ">
+                            Location:                          
+                        </p>
+                        <h4 class="text-lg font-bold ">152/1 Mohakhali Wireless Gate</h4>
+                    </div>
+
+                </div>
+                <!-- right side content -->
+
+                <div class="">
+                    <form class="grid lg:grid-cols-2 grid-cols-1 gap-12">                
+                        <div class="flex flex-col space-y-2 min-w-60">
+                            <label for="" class="text-xl font-semibold">Your Name</label>
+                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full" placeholder="Enter Your Name" >
+                        </div>
+
+                        <div class="flex flex-col space-y-2 min-w-60">
+                            <label for="" class="text-xl font-semibold">Your Email</label>
+                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"  placeholder="Enter Your Email">
+                        </div>
+
+                        <div class="flex flex-col space-y-2 min-w-60">
+                            <label for="" class="text-xl font-semibold">Subject</label>
+                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"  placeholder="Enter Your subject">
+                        </div>
+
+                        <div class="flex flex-col space-y-2 min-w-60">
+                            <label for="" class="text-xl font-semibold">Phone Number</label>
+                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"   placeholder="Enter Your phone number">
+                        </div>
+
+                        <div class="flex flex-col space-y-2 min-w-80 col-span-2">
+                            <label for="" class="text-xl font-semibold">Massage</label>
+                            <textarea class="textarea textarea-bordered outline-0 h-60" placeholder="Write your massage"></textarea>
+                        </div>
+                        
+                        <div class="flex min-w-80 col-span-2">
+                            <button
+                            class="btn bg-template border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 hover:text-orange-700 duration-500 w-full">Send Message</button>
+                        </div>
+                    </form>
+                </div>            
+            </div>
+
+            <!-- contact bottom -->
+            <div class="bg-slate-100 mt-12 py-12 text-center rounded-lg">
+                <h2 class="text-2xl font-bold">Social Media</h2>
+
+                <div class="flex gap-4 items-center justify-center mt-5">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+
+            </div>
         </section>
-        <!-- ======== Contact section End ======== -->
     </main>
 
     <!-- ======== Main section End ======== -->
