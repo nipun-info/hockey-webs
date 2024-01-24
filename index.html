@@ -26,8 +26,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        template: '#FF4240',
-                        'dark-color': "#131318"
+                        primary: '#FF4240',
+                        secondary: "#131318"
                     },
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif']
@@ -37,15 +37,12 @@
         }
     </script>
 
-    <!-- custom css -->
-    <style>
-    </style>
     <title>Hockey Website</title>
 </head>
 
-<body>
+<body class="font-manrope">
     <!-- ======== header section start ======== -->
-    <header class="container mx-auto lg:px-2 px-8 font-manrope">
+    <header class="container mx-auto lg:px-2 px-8">
         <div class="navbar">
             <div class="navbar-start">
                 <div class="dropdown ">
@@ -57,11 +54,11 @@
                         </svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
-                        <li><a class="text-lg font-semibold text-template hover:text-template">Home</a></li>
-                        <li><a class="text-lg font-semibold hover:text-template">About</a></li>
-                        <li><a class="text-lg font-semibold hover:text-template">Pages</a></li>
-                        <li><a class="text-lg font-semibold hover:text-template">Blog</a></li>
-                        <li><a class="text-lg font-semibold hover:text-template">Contact</a></li>
+                        <li><a class="text-lg font-semibold hover:text-primary text-red-700">Home</a></li>
+                        <li><a class="text-lg font-semibold hover:text-primary">About</a></li>
+                        <li><a class="text-lg font-semibold hover:text-primary">Pages</a></li>
+                        <li><a class="text-lg font-semibold hover:text-primary">Blog</a></li>
+                        <li><a class="text-lg font-semibold hover:text-primary">Contact</a></li>
                     </ul>
                 </div>
                 <a class="btn btn-ghost lg:text-4xl text-base font-bold">Hockey<span
@@ -70,11 +67,11 @@
 
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a class="text-lg font-semibold text-template hover:text-template">Home</a></li>
-                    <li><a class="text-lg font-semibold hover:text-template">About</a></li>
-                    <li><a class="text-lg font-semibold hover:text-template">Pages</a></li>
-                    <li><a class="text-lg font-semibold hover:text-template">Blog</a></li>
-                    <li><a class="text-lg font-semibold hover:text-template">Contact</a></li>
+                    <li><a class="text-lg font-semibold hover:text-primary text-primary">Home</a></li>
+                    <li><a class="text-lg font-semibold hover:text-primary text-secondary opacity-70">About</a></li>
+                    <li><a class="text-lg font-semibold hover:text-primary text-secondary opacity-70">Pages</a></li>
+                    <li><a class="text-lg font-semibold hover:text-primary text-secondary opacity-70">Blog</a></li>
+                    <li><a class="text-lg font-semibold hover:text-primary text-secondary opacity-70">Contact</a></li>
                 </ul>
             </div>
 
@@ -86,7 +83,8 @@
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </button>
-                <a class="btn btn-primary bg-template outline-0 text-white hover:bg-transparent hover:text-template ">Get
+                <a
+                    class="btn bg-primary outline-0 text-white hover:bg-transparent hover:text-primary hover:border-primary ">Get
                     Ticket</a>
             </div>
         </div>
@@ -95,7 +93,7 @@
     <!-- ======== header section End ======== -->
 
     <!-- ======== Banner section Start ======== -->
-    <section class="container mx-auto px-8 mt-8 font-manrope relative">
+    <section class="container mx-auto px-8 mt-8 relative">
         <div class="carousel w-full">
             <!-- slide-1 -->
             <div id="slide1" class="carousel-item relative w-full">
@@ -131,9 +129,8 @@
                 <h2 class="text-xl mb-5">
                     Meet all the heroes from the field
                 </h2>
-                <p class="text-base text-gray-500">
-                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
-                    sit nullam proin.
+                <p class="text-base text-gray-300">
+                    “We didn't start well tonight, so we talked about it in the room and said we needed to step it up,”
                 </p>
             </div>
         </div>
@@ -151,8 +148,8 @@
                         Professional Hockeys Club
                     </h2>
                     <p class="text-base opacity-90">
-                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
-                        in sit nullam proin.
+                        A group of clubs had earmarked resources for a five-month project with a goal to found such a
+                        club alliance among European professional clubs.
                     </p>
                 </div>
             </div>
@@ -165,7 +162,7 @@
                         87%</div>
                     <h4 class="text-xl font-bold">Player Facility</h4>
                     <p class="text-lg">
-                        Amet consectetur. Condimentum dignissim adipiscing .
+                        Designed to prepare the most effective training plan for the players
                     </p>
                 </div>
 
@@ -175,7 +172,7 @@
                         role="progressbar">95%</div>
                     <h4 class="text-xl font-bold">Experienced Coach</h4>
                     <p class="text-lg">
-                        Amet consectetur. Condimentum dignissim adipiscing .
+                        Plan your coach and inspiration from Marriott Bonvoy Traveler
                     </p>
                 </div>
 
@@ -185,7 +182,7 @@
                         role="progressbar">90%</div>
                     <h4 class="text-xl font-bold">Senior Player</h4>
                     <p class="text-lg">
-                        Amet consectetur. Condimentum dignissim adipiscing .
+                        Designed to prepare the most effective training plan for the players
                     </p>
                 </div>
 
@@ -195,7 +192,7 @@
                         80%</div>
                     <h4 class="text-xl font-bold">Training Ground</h4>
                     <p class="text-lg">
-                        Amet consectetur. Condimentum dignissim adipiscing .
+                        It allows you to develop the quality, accuracy, power of shooting.
                     </p>
                 </div>
             </div>
@@ -203,7 +200,7 @@
         </section>
 
         <!-- ======== program section Start ======== -->
-        <section class="mt-24">
+        <section class="mt-20">
             <!-- section-header -->
             <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
                 <div class="lg:max-w-lg max-w-md mx-auto text-center ">
@@ -211,13 +208,13 @@
                         Program Sections
                     </h2>
                     <p class="text-base opacity-90">
-                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
-                        in sit nullam proin.
+                        We offer a new generation training concept that allows players to develop individually and in
+                        small groups.
                     </p>
                 </div>
             </div>
 
-            <!--    Programs    -->
+            <!-- Programs  -->
             <div class="grid gap-4 lg:grid-cols-2 grid-cols-1">
                 <!-- card-1 -->
                 <div
@@ -225,13 +222,11 @@
                     <div class="max-w-[480px] px-8 py-20 text-white  space-y-8">
                         <h3 class="text-3xl font-bold">Junior Program</h3>
                         <p class="text-lg">
-                            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
-                            congue
-                            sed et in.
+                            The player's development occurs purposefully, based on accurate measurements through modern
+                            sports diagnostics, using the latest in artificial intelligence.
                         </p>
                         <button
-                            class="btn bg-template border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 duration-500 ">Register
+                            class="btn min-w-[150px] bg-primary border-0 text-white font-bold hover:bg-transparent hover:border hover:border-primary duration-700">Register
                             Now!</button>
                     </div>
                 </div>
@@ -241,13 +236,11 @@
                     <div class="max-w-[480px] px-8 py-20 text-white  space-y-8">
                         <h3 class="text-3xl font-bold">Junior Program</h3>
                         <p class="text-lg">
-                            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
-                            congue
-                            sed et in.
+                            The player’s development occurs purposefully, based on accurate measurements through modern
+                            sports diagnostics, using the latest in artificial intelligence.
                         </p>
                         <button
-                            class="btn bg-template border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 duration-500 ">Register
+                            class="btn min-w-[150px] bg-primary border-0 text-white font-bold hover:bg-transparent hover:border hover:border-primary duration-700">Register
                             Now!</button>
                     </div>
                 </div>
@@ -258,13 +251,11 @@
                     <div class="max-w-[550px] px-8 py-20 text-white  space-y-8">
                         <h3 class="text-3xl font-bold">Junior Program</h3>
                         <p class="text-lg">
-                            Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
-                            congue
-                            sed et in.
+                            The player's development occurs purposefully, based on accurate measurements through modern
+                            sports diagnostics, using the latest in artificial intelligence.
                         </p>
                         <button
-                            class="btn bg-template border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 duration-500 ">Register
+                            class="btn min-w-[150px] bg-primary border-0 text-white font-bold hover:bg-transparent hover:border hover:border-primary duration-700">Register
                             Now!</button>
                     </div>
                 </div>
@@ -272,7 +263,6 @@
         </section>
 
         <!-- ======== Products section Start ======== -->
-
         <section class="mt-20">
             <!-- section-header -->
             <div class="border-t-2 border-b-2 border-dashed py-8 mb-12">
@@ -280,9 +270,9 @@
                     <h2 class="lg:text-4xl text-2xl font-bold mb-5">
                         Our New Products
                     </h2>
-                    <p class="text-base text-dark-color opacity-70">
-                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
-                        in sit nullam proin.
+                    <p class="text-base text-secondary opacity-70">
+                        Fully automatic skating technique analysis system. The video is sent to the server and processed
+                        there using artificial intelligence.
                     </p>
                 </div>
             </div>
@@ -316,7 +306,7 @@
                         </div>
                         <h3 class="text-xl font-bold">World Cup Flags Football</h3>
                         <p class="text-base text-dark-color opacity-70">
-                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            As an integral component of the business mission
                         </p>
                         <div class="lg:flex gap-4 items-center space-y-2">
                             <h6 class="text-red-500 text-lg font-bold">Price- $22.00</h6>
@@ -355,7 +345,7 @@
                         </div>
                         <h3 class="text-xl font-bold">World Cup Flags Football</h3>
                         <p class="text-base text-dark-color opacity-70">
-                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            As an integral component of the business mission
                         </p>
                         <div class="lg:flex gap-4 items-center space-y-2">
                             <h6 class="text-red-500 text-lg font-bold">Price- $22.00</h6>
@@ -394,7 +384,7 @@
                         </div>
                         <h3 class="text-xl font-bold">World Cup Flags Football</h3>
                         <p class="text-base text-dark-color opacity-70">
-                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            As an integral component of the business mission
                         </p>
                         <div class="lg:flex gap-4 items-center space-y-2">
                             <h6 class="text-red-500 text-lg font-bold">Price- $22.00</h6>
@@ -433,7 +423,7 @@
                         </div>
                         <h3 class="text-xl font-bold">World Cup Flags Football</h3>
                         <p class="text-base text-dark-color opacity-70">
-                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            As an integral component of the business mission
                         </p>
                         <div class="lg:flex gap-4 items-center space-y-2">
                             <h6 class="text-red-500 text-lg font-bold">Price- $22.00</h6>
@@ -472,7 +462,7 @@
                         </div>
                         <h3 class="text-xl font-bold">World Cup Flags Football</h3>
                         <p class="text-base text-dark-color opacity-70">
-                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            As an integral component of the business mission
                         </p>
                         <div class="lg:flex gap-4 items-center space-y-2">
                             <h6 class="text-red-500 text-lg font-bold">Price- $22.00</h6>
@@ -511,7 +501,7 @@
                         </div>
                         <h3 class="text-xl font-bold">World Cup Flags Football</h3>
                         <p class="text-base text-dark-color opacity-70">
-                            Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                            As an integral component of the business mission
                         </p>
                         <div class="lg:flex gap-4 items-center space-y-2">
                             <h6 class="text-red-500 text-lg font-bold">Price- $22.00</h6>
@@ -534,105 +524,101 @@
                         Clients Question
                     </h2>
                     <p class="text-base opacity-90">
-                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
-                        in sit nullam proin.
+                        We offer a new generation training concept that allows players to develop individually and in
+                        small groups.
                     </p>
                 </div>
             </div>
 
             <!-- Questions content -->
-            <div class="border rounded-lg px-2 py-8 flex flex-col lg:flex-row gap-8 justify-center items-start">
+            <div class="border rounded-lg px-10 py-8 flex flex-col lg:flex-row gap-8 justify-center items-start">
                 <!-- question left -->
-                <div class="lg:w-2/5 w-full">
-                    <img src="images/11.png" alt="" class="w-full">
+                <div class="w-full lg:w-[70%]">
+                    <img src="images/11.png" alt="" class="w-full lg:w-[80%]">
                 </div>
 
                 <!-- questing right -->
                 <div class="flex flex-col items-center justify-start space-y-2">
                     <div class="collapse collapse-plus ">
                         <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-lg font-bold">
+                        <div class="collapse-title text-xl font-bold">
                             Our Equipment
                         </div>
                         <div class="collapse-content">
-                            <p>
-                                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis
-                                in magna.
+                            <p class="text-lg text-secondary opacity-80">
+                                Hockey requires a wide range of skills, from skating to passing, shooting, and
+                                defending.
                             </p>
                         </div>
                     </div>
 
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-lg font-bold">
+                        <div class="collapse-title text-xl font-bold">
                             Hockey Training
                         </div>
                         <div class="collapse-content">
-                            <p>
-                                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis
-                                in magna.
+                            <p class="text-lg text-secondary opacity-80">
+                                Hockey requires a wide range of skills, from skating to passing, shooting, and
+                                defending.
                             </p>
                         </div>
                     </div>
 
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-lg font-bold">
+                        <div class="collapse-title text-xl font-bold">
                             Private Lessons
                         </div>
                         <div class="collapse-content">
-                            <p>
-                                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis
-                                in magna.
+                            <p class="text-lg text-secondary opacity-80">
+                                Hockey requires a wide range of skills, from skating to passing, shooting, and
+                                defending.
                             </p>
                         </div>
                     </div>
 
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-lg font-bold">
+                        <div class="collapse-title text-xl font-bold">
                             Ski Touring
                         </div>
                         <div class="collapse-content">
-                            <p>
-                                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis
-                                in magna.
+                            <p class="text-lg text-secondary opacity-80">
+                                Hockey requires a wide range of skills, from skating to passing, shooting, and
+                                defending.
                             </p>
                         </div>
                     </div>
 
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-lg font-bold">
+                        <div class="collapse-title text-xl font-bold">
                             Booking
                         </div>
                         <div class="collapse-content">
-                            <p>
-                                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis
-                                in magna.
+                            <p class="text-lg text-secondary opacity-80">
+                                Hockey requires a wide range of skills, from skating to passing, shooting, and
+                                defending.
                             </p>
                         </div>
                     </div>
 
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
-                        <div class="collapse-title text-lg font-bold">
+                        <div class="collapse-title text-xl font-bold">
                             Pricings
                         </div>
                         <div class="collapse-content">
-                            <p>
-                                Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis
-                                in magna.
+                            <p class="text-lg text-secondary opacity-80">
+                                Hockey requires a wide range of skills, from skating to passing, shooting, and
+                                defending.
                             </p>
                         </div>
                     </div>
 
-
-
-
                 </div>
             </div>
-
         </section>
 
         <!-- ======== Contact section Start ======== -->
@@ -644,16 +630,14 @@
                         Get In Touch
                     </h2>
                     <p class="text-base opacity-90">
-                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
-                        in sit nullam proin.
+                        We offer a new generation training concept that allows players to develop individually and in
+                        small groups.
                     </p>
                 </div>
             </div>
 
             <!-- Contact us container -->
-
             <div class="flex lg:flex-row flex-col justify-between gap-8">
-
                 <!-- left side content -->
                 <div class="flex flex-col gap-6 border rounded-lg p-5 lg:w-1/2">
                     <!-- card-1 -->
@@ -685,48 +669,46 @@
 
                 </div>
                 <!-- right side content -->
-
-                <div class="">
-                    <form class="grid lg:grid-cols-2 grid-cols-1 gap-12">
-                        <div class="flex flex-col space-y-2 min-w-60">
-                            <label for="" class="text-xl font-semibold">Your Name</label>
-                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"
-                                placeholder="Enter Your Name">
+                <div class="lg:w-1/2 ">
+                    <form action="" class="grid gap-5 lg:grid-cols-2 grid-cols-1 ">
+                        <div class="">
+                            <label for="" class="text-xl font-bold">Your Name</label> <br>
+                            <input type="text" placeholder="Enter Your Full Name"
+                                class="border rounded-lg py-4 px-4 w-full mt-4">
                         </div>
 
-                        <div class="flex flex-col space-y-2 min-w-60">
-                            <label for="" class="text-xl font-semibold">Your Email</label>
-                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"
-                                placeholder="Enter Your Email">
+                        <div>
+                            <label for="" class="text-xl font-bold">Your Email</label> <br>
+                            <input type="text" placeholder="Enter Your Email"
+                                class="border rounded-lg py-4 px-4 w-full mt-4">
                         </div>
 
-                        <div class="flex flex-col space-y-2 min-w-60">
-                            <label for="" class="text-xl font-semibold">Subject</label>
-                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"
-                                placeholder="Enter Your subject">
+                        <div>
+                            <label for="" class="text-xl font-bold">Subject</label> <br>
+                            <input type="text" placeholder="Enter Your Subject"
+                                class="border rounded-lg py-4 px-4 w-full mt-4">
                         </div>
 
-                        <div class="flex flex-col space-y-2 min-w-60">
-                            <label for="" class="text-xl font-semibold">Phone Number</label>
-                            <input type="text" class="border rounded-xl outline-0 px-5 py-4 h-12 w-full"
-                                placeholder="Enter Your phone number">
+                        <div>
+                            <label for="" class="text-xl font-bold">Phone Number</label> <br>
+                            <input type="text" placeholder="Enter Your Phone Number"
+                                class="border rounded-lg py-4 px-4 w-full mt-4">
                         </div>
 
-                        <div class="flex flex-col space-y-2 min-w-80 col-span-2">
-                            <label for="" class="text-xl font-semibold">Massage</label>
-                            <textarea class="textarea textarea-bordered outline-0 h-60"
+                        <div class="lg:col-span-2">
+                            <label for="" class="text-xl font-bold">Message</label> <br>
+                            <textarea class="textarea textarea-bordered min-h-60 w-full mt-4 "
                                 placeholder="Write your massage"></textarea>
                         </div>
-
-                        <div class="flex min-w-80 col-span-2">
+                        <br>
+                        <div class="lg:col-span-2">
                             <button
-                                class="btn bg-template border-orange-700 text-white text-lg px-8 hover:bg-transparent hover:border-orange-700 hover:text-orange-700 duration-500 w-full">Send
+                                class="btn w-full bg-primary border-0 text-white font-bold hover:bg-transparent hover:border hover:border-primary duration-700">Send
                                 Message</button>
                         </div>
                     </form>
                 </div>
             </div>
-
             <!-- contact bottom -->
             <div class="bg-slate-100 mt-12 py-12 text-center rounded-lg">
                 <h2 class="text-2xl font-bold">Social Media</h2>
@@ -744,7 +726,7 @@
 
     <!-- ======== Main section End ======== -->
 
-    <!-- ======== Footer section Start ======== -->   
+    <!-- ======== Footer section Start ======== -->
     <footer class="bg-black text-white py-4">
         <div class="grid gap-12 lg:grid-cols-4 grid-cols-2   my-20 container mx-auto lg:px-20 px-8 ">
             <div class="col-span-2 lg:col-span-1 text-center lg:text-left justify-center">
@@ -752,20 +734,18 @@
                     <h3 class="text-3xl font-bold mb-5">
                         Get In Touch
                     </h3>
-                    <p class="text-base opacity-70 w-1/2 lg:w-full">
-                        Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat dolor. Purus urna in sit
-                        nullam proin.
+                    <p class="text-base opacity-70 w-1/2 lg:w-full mb-4">
+                        As an integral component of the business mission, we are organizing several bilateral meetings.
                     </p>
-                    <p class="text-base opacity-70 flex items-center gap-2">
-                        <i class="fa-regular fa-envelope text-xl text-template"></i>
-                        
-                        <span>hockeys@support.com</span>
+                    <p class="text-base opacity-70 flex items-center gap-2 mb-2">
+                        <i class="fa-regular fa-envelope text-xl text-primary"></i>
+                        <span>nasihul2010@gmail.com</span>
                     </p>
                     <p class="text-base opacity-70 flex  items-center gap-2 ">
-                        <i class="fa-solid fa-phone text-xl text-template"></i>
-                        <span>(+62) 123-321-543</span>
+                        <i class="fa-solid fa-phone text-xl text-primary"></i>
+                        <span>(+88) 01717880000</span>
                     </p>
-                </div>              
+                </div>
             </div>
 
             <div class="text-center lg:text-left">
@@ -783,15 +763,15 @@
 
             <div class="text-center lg:text-left">
                 <h4 class="text-xl font-semibold mb-8">
-                        Company
-                    </h4>
-                    <div class="flex flex-col space-y-5 text-base">
-                        <a class="text-base opacity-70" href="#">about us</a>
-                        <a class="text-base opacity-70" href="#">Leadership </a>
-                        <a class="text-base opacity-70" href="#">Careers</a>
-                        <a class="text-base opacity-70" href="#">News & Article</a>
-                        <a class="text-base opacity-70" href="#">Legal Notice</a>
-                    </div>
+                    Company
+                </h4>
+                <div class="flex flex-col space-y-5 text-base">
+                    <a class="text-base opacity-70" href="#">about us</a>
+                    <a class="text-base opacity-70" href="#">Leadership </a>
+                    <a class="text-base opacity-70" href="#">Careers</a>
+                    <a class="text-base opacity-70" href="#">News & Article</a>
+                    <a class="text-base opacity-70" href="#">Legal Notice</a>
+                </div>
             </div>
 
             <div class="col-span-2 lg:col-span-1 text-center lg:text-left">
